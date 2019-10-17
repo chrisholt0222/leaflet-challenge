@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
-
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <title>Leaflet</title>
 </head>
+
 <body>
+  <h1>Visualizing Data with Leaflet - Earthquakes
+  </h1>
+  <br>
+  <h1>
+      <img src="images/1-Logo.png" alt="USGS" width="400" height="200"/>
+  </h1>
+  The United States Geological Survey (USGS) collects and provides scientific data on natural hazards 
+  and the health of our ecosystems and environment. Their scientists develop new methods and tools to 
+  supply timely, relevant, and useful information about the Earth and its processes. This project 
+  creates a map utilizing Leaflet showing earthquakes and the magnituge based on USGS data (geoJson).
+  
+  <section>
+  <hr>
+  <h2><a target="_blank" href="Leaflet-Step-1/index.html">Leaflet-Step-1</a></h2>
+  <p>
+    The first plot shows the all earthquakes for the day pulled from the USGS
+    <a target="_blank" href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">feed</a>.
+    The plot reflects the magnitude of the earthquake based on both the size and the color of each circle. 
+    Earthquakes with higher magnitudes appear larger and darker in color. 
+  </p>
+  
+  <hr>
 
-  <!-- The div that holds our map -->
-  <div id="map"></div>
-
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-  <!-- D3 JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
-  <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/config.js"></script>
-  <script type="text/javascript" src="static/js/logic.js"></script>
+  <h2><a target="_blank" href="Leaflet-Step-2/index.html">Leaflet-Step-2</a></h2>
+  <p>
+    The second plot includes additional information and additional map options. For each earthquake, 
+    a popup is available providing location, magnitude and date. The fault line boundaries can are 
+    added as well.
+  </p>
+  
+  </section>
 </body>
-</html>
+
