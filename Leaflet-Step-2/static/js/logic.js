@@ -57,6 +57,13 @@ function createCircles(earthquakeData) {
     return EQ
 };
 
+function createBoundary() {
+  d3.json(boundary, function(response) {
+    var myLayer = L.geoJSON();
+    return myLayer.addData(response.features);
+  });
+};
+
 // Grab data with d3
 d3.json(geoData, function(response) {
         
@@ -99,7 +106,7 @@ d3.json(geoData, function(response) {
     "Satellite" : satellite
    };
 
-  //Get style for boundary
+  //Get Boundary and Plate jsons
   var myStyle = {
     "color": "orange",
     "weight": 5,
