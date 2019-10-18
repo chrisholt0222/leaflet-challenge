@@ -57,13 +57,6 @@ function createCircles(earthquakeData) {
     return EQ
 };
 
-function createBoundary() {
-  d3.json(boundary, function(response) {
-    var myLayer = L.geoJSON();
-    return myLayer.addData(response.features);
-  });
-};
-
 // Grab data with d3
 d3.json(geoData, function(response) {
         
@@ -106,23 +99,20 @@ d3.json(geoData, function(response) {
     "Satellite" : satellite
    };
 
-  //Get Boundary and Plate jsons
-  var myBoundary = L.geoJSON();
-  d3.json(boundary, function(data) {
-    var myStyle = {
-      "color": "orange",
-      "weight": 5,
-      "opacity": 0.5
-    };
+  //Get style for boundary
+  var myStyle = {
+    "color": "orange",
+    "weight": 5,
+    "opacity": 0.5
+  };
 
-    myBoundary.addData(data.features, {style: myStyle});
-    });
-  
-/*  var myPlates = L.geoJSON();
-  d3.json(plates, function(data) {
-    myPlates.addData(data.features);
-    });
-*/
+  //Add Boundary lines
+  var myBoundary = L.geoJSON([],{style:myStyle});
+
+  d3.json(boundary, function(data) {
+    myBoundary.addData(data.features);
+  });  
+
 
   // Create an overlayMaps object to hold the bikeStations layer
   var overlayMaps = {
