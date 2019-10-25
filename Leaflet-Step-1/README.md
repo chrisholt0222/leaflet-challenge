@@ -4,4 +4,4 @@ The United States Geological Survey (USGS) collects and provides scientific data
 
 Live site: https://chrisholt0222.github.io/leaflet-challenge/
 
-Leaflet-Step-1 pulls in daily earthquakes from the [USGS site] (https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php). The daily earthquakes are shown as cirles on the world map (centered in US) with the size and color reflecting the magnitude of each earthquake. Earthquakes with higher magnitudes appear larger and darker in color. A popup is avialble showing additional information on each earthquake.
+Leaflet-Step-1 pulls in daily earthquakes from the USGS site: (https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php). The daily earthquakes are shown as cirles on the world map (centered in US) with the size and color reflecting the magnitude of each earthquake. Earthquakes with higher magnitudes appear larger and darker in color. A popup is avialble showing additional information on each earthquake.
