@@ -61,11 +61,13 @@ function createCircles(earthquakeData) {
                 opacity: 1,
                 fillOpacity: 0.6
             };
-            
+            console.log(latlng);
           return L.circleMarker(latlng, options)
             .bindPopup("<p>" + "Location: " + feature.properties.place +
             "<br> Date/Time: " + new Date (feature.properties.time) +
-            "<br> Magnitude: " + feature.properties.mag + "</p>");
+            "<br> Magnitude: " + feature.properties.mag +
+            "<br> Depth of the event in kilometers: " + latlng.alt +
+            "<br> Number of Reports ('felt'): " + feature.properties.felt + "</p>");
         }
       });
     return EQ
