@@ -6,4 +6,4 @@ The United States Geological Survey (USGS) collects and provides scientific data
 
 Live site: https://chrisholt0222.github.io/leaflet-challenge/
 
-There are two verions: Leaflet-Step-1 and Leaflet-Step-2. Both plot cirles on the world map reflect the magnitude of the earthquake in both size and color. Earthquakes with higher magnitudes appear larger and darker in color. Additional information is included Leaflet-Step-2 (as it expands on Leaflet-Step-1) such as popups on each earthquake and the ability to fault line boundaries on the map.
+There are two verions: Leaflet-Step-1 and Leaflet-Step-2. Both plot cirles on the world map reflect the magnitude of the earthquake in both size and color. Earthquakes with higher magnitudes appear larger and darker in color. A popup is avialble showing additional information on each earthquake. Leaflet-Step-2 expands on Leaflet-Step-1 including such as the fault line boundaries on the map.

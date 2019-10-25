@@ -51,7 +51,9 @@ function createCircles(earthquakeData) {
           return L.circleMarker(latlng, options)
             .bindPopup("<p>" + "Location: " + feature.properties.place +
             "<br> Date/Time: " + new Date (feature.properties.time) +
-            "<br> Magnitude: " + feature.properties.mag + "</p>");
+            "<br> Magnitude: " + feature.properties.mag +
+            "<br> Depth of the event in kilometers: " + latlng.alt +
+            "<br> Number of Reports ('felt'): " + feature.properties.felt + "</p>");
         }
       });
     return EQ
@@ -101,7 +103,7 @@ d3.json(geoData, function(response) {
   // Create a baseMaps object to hold the lightmap layer
   var baseMaps = {
     "Street Level" : streetLevel,
-    "Pirates": pirates,
+    "Pirates (Arr!)": pirates,
     "Outdoors" : outdoors,
     "Satellite" : satellite
    };
